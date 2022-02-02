@@ -59,7 +59,7 @@ function download_content {
   mkdir -p "$CONTENT_FOLDER"
 
   # use git lfs to speed up downloading content
-  # git lfs -b 0.9.11 clone https://bitbucket.org/carla-simulator/carla-content
+  git lfs -b 0.9.11 clone https://bitbucket.org/carla-simulator/carla-content
   mv carla-content/* "$CONTENT_FOLDER"
   rm -rf carla-content
 
