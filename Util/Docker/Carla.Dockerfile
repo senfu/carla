@@ -13,7 +13,6 @@ RUN cd /home/carla/ && \
   make CarlaUE4Editor && \
   make PythonAPI && \
   make build.utils && \
-  make package && \
-  rm -r /home/carla/carla/Dist
+  rm -rf /home/carla/carla/Dist
 
 WORKDIR /home/carla/carla
